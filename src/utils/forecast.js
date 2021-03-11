@@ -20,7 +20,8 @@ const forecast=(lat,lang,callback)=>{
             callback(undefined,{
                 weather_descriptions:res.body.current.weather_descriptions,
                 temperature:res.body.current.temperature,
-                feelslike:res.body.current.feelslike
+                feelslike:res.body.current.feelslike,
+                humidity:res.body.current.humidity
 
             })
         }

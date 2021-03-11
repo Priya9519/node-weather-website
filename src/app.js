@@ -92,7 +92,7 @@ app.get('/weather',(req,response)=>{
                 else{
 
                     response.send({
-                        forecast:ress.weather_descriptions[0]+", It is currently "+ress.temperature+" degrees out. It feels like "+ress.feelslike+" degree out.",
+                        forecast:ress.weather_descriptions[0]+", It is currently "+ress.temperature+" degrees out. It feels like "+ress.feelslike+" degree out. Humidity is "+ress.humidity+" percent",
                         location:res.location,
                         address:req.query.address
     
